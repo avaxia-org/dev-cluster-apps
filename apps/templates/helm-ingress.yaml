@@ -11,6 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: charts
+    path: charts/ingress-nginx
     repoURL:  https://github.com/kubernetes/ingress-nginx
     targetRevision: HEAD
