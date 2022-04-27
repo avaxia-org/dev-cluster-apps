@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ingress
+  name: {{ .Values.destination.env }}-{{ .Values.ingressNginx.name }}
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: ingress-basic
-    server: {{ .Values.spec.destination.server }}
+    server: {{ .Values.destination.server }}
   project: default
   source:
     chart: ingress-nginx
