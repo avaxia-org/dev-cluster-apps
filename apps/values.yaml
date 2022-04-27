@@ -1,7 +1,7 @@
-spec:
-  destination:
+
+destination:
     server: https://dev-cluster-dns-d68784a2.hcp.southeastasia.azmk8s.io:443
-  env: ""
+    env: ""
 
 rollouts:
   name: argo-rollouts
