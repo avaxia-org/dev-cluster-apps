@@ -1,6 +1,3 @@
 spec:
   destination:
     server: https://dev-cluster-dns-d68784a2.hcp.southeastasia.azmk8s.io:443
-  source:
-    repoURL: https://github.com/argoproj/argocd-example-apps
-    targetRevision: HEAD

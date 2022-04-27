@@ -1,21 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ingress
+  name: helm-ingress
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: ingress-basic
+    namespace: helm-ingress
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    chart: ingress-nginx
-    helm:
-      # parameters: []
-      values: |
-        controller:
-          replicaCount: 3
-    repoURL: https://github.com/kubernetes/ingress-nginx/charts/ingress-nginx
+    path: helm-guestbook
+    repoURL:  https://github.com/kubernetes/ingress-nginx/charts/ingress-nginx
     targetRevision: HEAD
