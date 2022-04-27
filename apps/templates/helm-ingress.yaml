@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: ingress-basic
-    server: {{ .values.spec.destination.server }}
+    server: {{ .Values.spec.destination.server }}
   project: default
   source:
     chart: ingress-nginx
