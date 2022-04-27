@@ -18,6 +18,6 @@ spec:
         controller:
           ingressClass: wso2
           replicaCount: 3
-    repoURL: https://kubernetes.github.io/ingress-nginx
+    repoURL: https://helm.nginx.com/stable
     targetRevision: 4.0.19
     targetRevision: HEAD
