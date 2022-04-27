@@ -17,5 +17,5 @@ spec:
       values: |
         controller:
           replicaCount: 3
-    repoURL: 
+    repoURL: https://github.com/kubernetes/ingress-nginx/charts/ingress-nginx
     targetRevision: HEAD
