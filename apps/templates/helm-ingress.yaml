@@ -18,5 +18,5 @@ spec:
         controller:
           ingressClass: wso2
           replicaCount: 3
-    repoURL: https://github.com/kubernetes/ingress-nginx
+    repoURL: https://github.com/kubernetes/ingress-nginx/charts/ingress-nginx
     targetRevision: HEAD
