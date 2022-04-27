@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{ .Values.destination.env }}-{{ .Values.kubed.name }}
+  name: kubed
   namespace: argocd
 spec:
   project: default
