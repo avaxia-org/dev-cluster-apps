@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: wso2
-    server: {{ .Values.spec.destination.server }}
+    server: {{ .Values.destination.server }}
   project: default
   source:
     path: wso2
