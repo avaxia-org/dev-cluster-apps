@@ -16,7 +16,6 @@ spec:
       # parameters: []
       values: |
         controller:
-          ingressClass: wso2
           replicaCount: 3
-    repoURL: https://github.com/kubernetes/ingress-nginx/charts/ingress-nginx
+    repoURL: 
     targetRevision: HEAD
