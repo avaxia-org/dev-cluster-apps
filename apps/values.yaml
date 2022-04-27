@@ -1,3 +1,6 @@
 spec:
   destination:
-    server: https://dev-cluster-dns-d68784a2.hcp.southeastasia.azmk8s.io:443
+    server: https://dev-cluster-dns-d68784a2.hcp.southeastasia.azmk8s.io:443ttps://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/HasseneFliss/pass/tnr
+    targetRevision: HEAD
