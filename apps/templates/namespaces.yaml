@@ -25,3 +25,5 @@ metadata:
   name: sync-waves
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
+argocd app create guestbook --repo https://github.com/argoproj/argocd-example-apps.git --path guestbook --dest-server https://dev-cluster-dns-d68784a2.hcp.southeastasia.azmk8s.io:443
+ --dest-namespace default
