@@ -11,6 +11,13 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: ingress-basic
+    chart: ingress-nginx
+    helm:
+      # parameters: []
+      values: |
+        controller:
+          ingressClass: wso2
+          replicaCount: 3
     repoURL: https://kubernetes.github.io/ingress-nginx
+    targetRevision: 4.0.19
     targetRevision: HEAD
