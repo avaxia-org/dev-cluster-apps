@@ -12,6 +12,6 @@ spec:
   project: default
   source:
     path: wso2
-    repoURL: https://github.com/wso2/kubernetes-apim
+    repoURL: https://github.com/wso2/kubernetes-apim/tree/master/simple/am-single
     targetRevision: HEAD
 
